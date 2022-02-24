@@ -9,8 +9,5 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => res.send("Hello world"));
 
-app.post("/", (req, res) => {
-    res.status(200);
-});
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
