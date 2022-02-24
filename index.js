@@ -9,9 +9,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => res.send("Hello world"));
 
-app.post("/", (req, res) => {
-    res.send(req);
-});
 
 app.get("/result", (req, res) => {
 
